@@ -21,10 +21,13 @@ import com.google.gson.GsonBuilder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import android.widget.Toast;
 
 public class AnswerActivity extends AppCompatActivity {
 
-    String URL = "https://gist.githubusercontent.com/asaharan/c24aa2365812432f342ef743f7e2fdfe/raw/678f8cf06616cf91062bcaf0669e9f5d816c771d/main.json";
+    String newString;
+
+    String URL = "https://gist.githubusercontent.com/abhijitkumar4293/4cbb92a6105241a8c4728d56f4be9b5d/raw/98b2b5bfe41c8554239a7be9a02c1a1386bcb3c3/SurveyForNotification.jason";
     String TAG="tag";
     Gson gson;
     private RequestQueue queue;
@@ -41,9 +44,9 @@ public class AnswerActivity extends AppCompatActivity {
         onItemClickListener = new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
+                //Toast.makeText(getApplicationContext(), b,Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(),InsideAnswerActivity.class);
                 Survey selectedSurvey = answerResponse.surveys.get(i);
-                intent.putExtra("survey",selectedSurvey);
                 startActivity(intent);
             }
         };

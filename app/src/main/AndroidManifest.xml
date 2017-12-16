@@ -22,7 +22,10 @@
         <activity android:name=".RaiseActivity" />
         <activity android:name=".SurveyActivity" />
         <activity android:name=".AnswerActivity" />
-        <activity android:name=".InsideAnswerActivity"></activity>
+        <activity android:name=".InsideAnswerActivity" />
+        <activity android:name=".Raise_NextActivity" />
+        <activity android:name=".Survey_FromApp_Activity" />
+        <activity android:name=".View_ResultActivity"></activity>
     </application>
 
 </manifest>

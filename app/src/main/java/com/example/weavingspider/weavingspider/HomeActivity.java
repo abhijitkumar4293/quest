@@ -9,7 +9,8 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button raiseButton, answerButton;
+    Button raiseButton, answerButton, exploreButton;
+    static String strOption = "a";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,13 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         raiseButton = (Button) findViewById(R.id.raiseButton);
         answerButton = (Button) findViewById(R.id.answerButton);
+        exploreButton = (Button) findViewById(R.id.exploreButton);
 
         raiseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),RaiseActivity.class);
+                //Intent intent = new Intent(getApplicationContext(),RaiseActivity.class);
+                Intent intent = new Intent(getApplicationContext(),Raise_NextActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +32,20 @@ public class HomeActivity extends AppCompatActivity {
         answerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String strOption = null;
                 Intent intent = new Intent(getApplicationContext(),AnswerActivity.class);
+                intent.putExtra("STRING_I_NEED",strOption);
+                startActivity(intent);
+            }
+        });
+
+        exploreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), "Username and password doesn't match",Toast.LENGTH_LONG).show();
+                strOption = "exploresurvey";
+                Intent intent = new Intent(getApplicationContext(),AnswerActivity.class);
+                intent.putExtra("STRING_I_NEED",strOption);
                 startActivity(intent);
             }
         });

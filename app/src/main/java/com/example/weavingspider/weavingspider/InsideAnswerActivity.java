@@ -1,5 +1,6 @@
 package com.example.weavingspider.weavingspider;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,7 +29,10 @@ public class InsideAnswerActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"j",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Your Response has been successfully recorded",Toast.LENGTH_LONG).show();
+                //notifyThis("Quick.Ly : New Survey","Survey is waiting to be attended!!!");
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
 
             }
         });

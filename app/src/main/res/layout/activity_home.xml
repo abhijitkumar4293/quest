@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/button_background"
     tools:context="com.example.weavingspider.weavingspider.HomeActivity">
     <LinearLayout
         android:orientation="vertical"
@@ -18,7 +19,7 @@
         <Button
             android:id="@+id/raiseButton"
             android:textColor="@color/white"
-            android:background="@drawable/button_background"
+            android:background="@drawable/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/raise_button_text"
@@ -27,7 +28,7 @@
         <Button
             android:id="@+id/answerButton"
             android:textColor="@color/white"
-            android:background="@drawable/button_background"
+            android:background="@drawable/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/answer_button_text"
@@ -36,7 +37,7 @@
         <Button
             android:id="@+id/resultButton"
             android:textColor="@color/white"
-            android:background="@drawable/button_background"
+            android:background="@drawable/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/result_button_text"
@@ -45,7 +46,7 @@
         <Button
             android:id="@+id/exploreButton"
             android:textColor="@color/white"
-            android:background="@drawable/button_background"
+            android:background="@drawable/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/explore_button_text"

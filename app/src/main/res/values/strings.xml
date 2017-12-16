@@ -1,11 +1,15 @@
 <resources>
-    <string name="app_name">xx</string>
+    <string name="app_name">Quik.ly</string>
     <string name="username_input_placeholder">Username</string>
     <string name="password_input_placeholder">Password</string>
     <string name="login_button">Login</string>
     <string name="signup_button">Sign Up</string>
     <string name="raise_button_text">Raise</string>
     <string name="answer_button_text">Fill Pending Surveys</string>
-    <string name="result_button_text">View Result</string>
+    <string name="result_button_text">View Result of my Survey</string>
+    <string name="Question1">Question 1</string>
+    <string name="Question2">Question 2</string>
+    <string name="Question3">Question 3</string>
     <string name="explore_button_text">Explore</string>
+
 </resources>
